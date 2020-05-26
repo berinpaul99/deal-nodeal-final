@@ -1,6 +1,5 @@
 import React from 'react';
 import { obj, amountLeft, amountRight } from './json/object';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import DealSuccess from './DealSuccess';
 import power from './audio/power.mp3';
 import ModalPart from './Modal';
