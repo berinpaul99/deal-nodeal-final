@@ -1,0 +1,351 @@
+.App {
+  background-image: url("./images/bg.png");
+  width: 100%;
+}
+
+#mute {
+  float: right;
+  position: relative;
+  bottom: 49px;
+  width: 54px;
+}
+
+header {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 23px;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .App #mute {
+    bottom: 24px;
+    width: 30px;
+  }
+}
+
+.game-container {
+  display: block;
+}
+
+@media only screen and (max-width: 428px) {
+  .game-container {
+    display: none;
+  }
+}
+
+.suitcaseSection {
+  width: 50%;
+  display: inline-block;
+}
+
+.suitcaseSection li {
+  list-style: none;
+}
+
+.leftsection {
+  text-align: left;
+}
+
+.rightsection {
+  text-align: right;
+}
+
+.suitcase {
+  background-image: url('./images/case.png');
+  background-repeat: no-repeat;
+  width: 126px;
+  height: 102px;
+  display: inline-block;
+}
+
+.suitcase p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .suitcase {
+    width: 90px;
+    height: 75px;
+    background-image: url('./images/resizeimage1.png');
+  }
+
+  .suitcase p {
+    margin-top: 23%;
+  }
+}
+
+
+
+.suitcase-open {
+  background-image: url('./images/case_open_status.png');
+  background-size: contain;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+
+
+.leftpane {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.rightpane {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+.first_row {
+  display: inline-block;
+  float: left;
+  width: 70%;
+  text-align: center;
+}
+
+.first_row li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.leftamountSection {
+  background: transparent;
+  border: none;
+}
+
+.leftamountSection img {
+  width: 190px;
+}
+
+.leftamountSection span {
+  font-size: 20px;
+  position: relative;
+  right: 50%;
+  bottom: 10px;
+  width: 15px;
+  display: inline-block;
+}
+
+.rightamountSection {
+    background-image: url('./images/amountBg.png');
+    border: none;
+    /* width: 190px; */
+    width: 94%;
+    height: 32px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button.rightamountSection[disabled] {
+  background: orangered;
+  color: white;
+}
+
+.user_selected_case {
+  background: radial-gradient(gold, transparent);
+}
+
+.roundDetails {
+  text-align: center;
+  background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%, rgba(251,32,86,1) 0%, rgba(135,2,35,1) 90% );
+  color: wheat;
+}
+
+.roundDetails h1 {
+  padding: 10px;
+  font-family: cursive;
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .roundDetails {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .roundDetails h1 {
+    padding: 6px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+  }
+}
+
+.BankerPage {
+  background-image: url('./images/Banker1.jpg');
+  height: 500px;
+  margin-top: 0;
+}
+
+.BankerPage button {
+  background: none;
+  border: none;
+}
+
+.BankerPage .dnd_button {
+  position: relative;
+  top: 60%;
+}
+
+.BankerPage button:focus {
+  outline: none;
+}
+
+.bank_offer_banner {
+  font-size: 19px;
+  font-family: cursive;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.bank_offer_banner h2 {
+  margin-top: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bank_offer_banner {
+    font-size: 12px;
+  }
+
+  .bank_offer_banner h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .BankerPage .dnd_button {
+    top: 45%;
+  }
+
+  .dnd_button button img {
+    width: 130px;
+  }
+}
+
+.dealSuccessPage {
+  height: 547px;
+}
+
+.dealSuccessPage .celebration {
+  width: 100%;
+  height: 547px;
+}
+.dealSuccessPage .replay {
+  position: relative;
+  display: inherit;
+  bottom: 303px;
+  background: transparent;
+  width: 100px;
+  height: 60px;
+}
+
+
+/* .dealSuccessPage {
+  background-image: url('./images/celeb3.jpg');
+  height: 547px;
+} */
+
+.dealSuccessPage p {
+  font-size: 40px;
+  font-weight: bold;
+  color: ivory;
+  font-family: cursive;
+}
+
+.dealSuccessPage .congratsPart {
+  position: relative;
+  bottom: 290px;
+}
+
+.dealSuccessPage .congratsPart button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.replayButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.replayButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.replayButton:hover span {
+  padding-right: 25px;
+}
+
+.replayButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .dealSuccessPage .congratsPart {
+    position: relative;
+    bottom: 448px;
+  }
+  .dealSuccessPage p {
+    color: black;
+  }
+  .dealSuccessPage .congratsPart .replayButton {
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+  }
+}
+
+.warning {
+  display: none
+}
+
+/* @media only screen and (min-width: 650px) {
+  .warning {
+    display: block
+  }
+} */
+
+@media only screen and (max-width: 428px) {
+  .warning {
+    display: block;
+    height: 715px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .warningMessage {
+    width: 100%;
+    text-align: center;
+    background: maroon;
+    color: white;
+    margin-top: 10%;
+    padding: 10px;
+  }
+}
