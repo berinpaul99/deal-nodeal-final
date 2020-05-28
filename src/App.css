@@ -72,13 +72,13 @@ header {
 
 @media only screen and (max-width: 768px) {
   .suitcase {
-    width: 90px;
-    height: 75px;
-    background-image: url('./images/resizeimage1.png');
+    background-image: url('./images/new.png');
+    width: 64px;
+    height: 56px;
   }
 
   .suitcase p {
-    margin-top: 23%;
+    font-size: 12px;
   }
 }
 
@@ -147,6 +147,21 @@ header {
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .rightamountSection {
+    width: 80%;
+    height: 13px;
+    font-size: 9px;
+    margin-bottom: 1px;
+  }
+
+  .first_row li {
+    margin: 0 5px;
+  }
+
+}
+
 button.rightamountSection[disabled] {
   background: orangered;
   color: white;
@@ -177,8 +192,8 @@ button.rightamountSection[disabled] {
   }
   .roundDetails h1 {
     padding: 6px;
-    margin: 10px 0 10px 0;
-    font-size: 20px;
+    margin: 5px 0 5px 0;
+    font-size: 15px;
   }
 }
 
@@ -213,6 +228,11 @@ button.rightamountSection[disabled] {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .BankerPage {
+    height: 312px;  
+  }
+
   .bank_offer_banner {
     font-size: 12px;
   }
@@ -223,7 +243,7 @@ button.rightamountSection[disabled] {
   }
 
   .BankerPage .dnd_button {
-    top: 45%;
+    top: 75%;
   }
 
   .dnd_button button img {
@@ -307,10 +327,10 @@ button.rightamountSection[disabled] {
 }
 
 @media only screen and (max-width: 768px) {
-  .dealSuccessPage .congratsPart {
+  /* .dealSuccessPage .congratsPart {
     position: relative;
     bottom: 448px;
-  }
+  } */
   .dealSuccessPage p {
     color: black;
   }
@@ -319,6 +339,14 @@ button.rightamountSection[disabled] {
     padding: 5px;
     width: 200px;
     margin: 5px;
+  }
+
+  .dealSuccessPage {
+    height: 313px;
+  }
+
+  .dealSuccessPage .celebration {
+    height: 313px;
   }
 }
 
